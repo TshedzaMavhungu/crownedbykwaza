@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | Crowned by Kwaza</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(90deg, #ffb6c1, #ff69b4);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+    }
+
+    .navbar .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-links li a:hover,
+    .navbar .nav-links li a:focus {
+      color: #ffe4e1;
+      text-decoration: underline;
+    }
+
+    /* Main About Section */
+    .about-section {
+      max-width: 700px;
+      margin: 50px auto 60px auto;
+      padding: 2rem 2.5rem;
+      background-color: #ffe4e1;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(255, 105, 180, 0.3);
+      text-align: center;
+      color: #333;
+    }
+
+    /* Owner image styles */
+    .owner-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 1rem auto;
+      border: 4px solid #d63384;
+      box-shadow: 0 2px 8px rgba(214, 51, 132, 0.5);
+    }
+
+    .owner-caption {
+      font-weight: 600;
+      color: #d63384;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .about-section h1 {
+      font-size: 2.4rem;
+      color: #d63384;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .about-section p {
+      font-size: 1.15rem;
+      margin-bottom: 1rem;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    /* Delivery Information Section */
+    .delivery-info {
+      margin-top: 2rem;
+      text-align: left;
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+      border-top: 2px solid #d63384;
+      padding-top: 1rem;
+      color: #7a2a0a;
+    }
+
+    .delivery-info h2 {
+      color: #d63384;
+      margin-bottom: 0.5rem;
+    }
+
+    .delivery-info ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    .delivery-info ul li {
+      margin-bottom: 0.4rem;
+    }
+
+    .delivery-info p {
+      margin-top: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, #ffb6c1, #ff69b4);
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      font-size: 0.9rem;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+      margin-top: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .about-section {
+        width: 90%;
+        padding: 1.5rem 1.8rem;
+      }
+
+      .navbar {
+        flex-direction: column;
+        gap: 12px;
+        font-size: 1.3rem;
+      }
+
+      .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Crowned by Kwaza</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-section" role="main">
+    <img src="images/owner.jpg" alt="Owner of Crowned by Kwaza" class="owner-image" />
+    <div class="owner-caption">Dyani Kwaza, Founder & Curator</div>
+    
+    <h1>About Crowned by Kwaza</h1>
+    <p>Welcome to Crowned by Kwaza, your trusted source for stylish headwraps, vibrant jerseys, quality labcoats, and beautiful mathahla—the traditional leg instruments that create enchanting sounds during dance.</p>
+    <p>We carefully select each product to help you express your unique style and celebrate your culture, whether you’re a church girl looking for elegant accessories or simply someone who loves quality and beauty. Everyone is warmly welcomed here.</p>
+    <p>At Crowned by Kwaza, we believe in offering more than just products — we offer pieces that crown your confidence and grace for every occasion. Thank you for choosing us to be part of your journey.</p>
+
+    <section class="delivery-info" aria-label="Delivery Information">
+      <h2>Delivery Information</h2>
+      <ul>
+        <li><strong>Pexi small bag:</strong> 7-9 days — R60, 3-5 days — R110</li>
+        <li><strong>pexi large bag:</strong> 7-9 days — R110, 3-5 days — R140</li>
+        <li><strong>Courier Guy:</strong> Available</li>
+      </ul>
+      <p>We work with reliable services to ensure your order reaches you safely and on time.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Crowned by Kwaza. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

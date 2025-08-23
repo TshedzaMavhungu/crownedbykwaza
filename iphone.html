@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>iPhone Accessories | Crowned by Kwaza</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5;
+      color: #4a2a13;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .navbar {
+      background: linear-gradient(90deg, #ffb6c1, #ff69b4);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .navbar .nav-links li a:hover,
+    .navbar .nav-links li a:focus {
+      color: #ffe4e1;
+      text-decoration: underline;
+    }
+    .page-title {
+      text-align: center;
+      margin: 3rem 1rem 1.5rem;
+      color: #d63384;
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+    .intro {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+      font-size: 1.1rem;
+      color: #7a4b2c;
+      text-align: center;
+    }
+    .gallery {
+      max-width: 400px;
+      margin: 0 auto 3rem;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .gallery-item {
+      border: 2px solid #ffb6c1;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(255, 105, 180, 0.2);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 12px;
+    }
+    .gallery-item:hover,
+    .gallery-item:focus {
+      box-shadow: 0 6px 18px rgba(214, 51, 132, 0.4);
+      transform: translateY(-5px);
+      outline: none;
+    }
+    .gallery-item img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: contain;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    .gallery-item .caption {
+      font-size: 1rem;
+      color: #d63384;
+      font-weight: 600;
+      text-align: center;
+    }
+/* Back to Products with background */
+    .back-link {
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #b3502a;
+      background-color: #d8a7b1; /* Matches gallery background */
+      border-radius: 8px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .back-link:hover,
+    .back-link:focus {
+      background-color: #c08d98;
+      color: #7a2a0a;
+      text-decoration: underline;
+      outline: none;
+    }
+
+    /* Footer with same tone */
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #fff;
+      background-color: #d8a7b1; /* Matches item box */
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        gap: 12px;
+        font-size: 1.3rem;
+      }
+      .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Crowned by Kwaza</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html" aria-current="page">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 class="page-title">Pre-owned iPhone Accessories</h1>
+  <p class="intro">Find quality pre-owned iPhone accessories at affordable prices. Upgrade your device with trusted products.</p>
+
+  <div class="gallery" role="list">
+    <div class="gallery-item" role="listitem" tabindex="0">
+      <img src="images/iphone (2).jpg" alt="Pre-owned iPhone" />
+      <div class="caption">Pre-owned iPhone starting at R2000</div>
+    </div>
+  </div>
+
+  <a href="product.html" class="back-link">&larr; Back to Products</a>
+
+  <footer>
+    <p>&copy; 2025 Crowned by Kwaza. All rights reserved.</p>
+  </footer>
+</body>
+</html>

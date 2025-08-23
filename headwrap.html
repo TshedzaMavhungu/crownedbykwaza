@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Headwraps | Crowned by Kwaza</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5;
+      color: #4a2a13;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .navbar {
+      background: linear-gradient(90deg, #ffc0cb, #ffb6c1);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .navbar .nav-links li a:hover,
+    .navbar .nav-links li a:focus {
+      color: #ffe4e1;
+      text-decoration: underline;
+    }
+    .page-title {
+      text-align: center;
+      margin: 3rem 1rem 1.5rem;
+      color: #d63384;
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+    .intro {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+      font-size: 1.1rem;
+      color: #7a4b2c;
+      text-align: center;
+    }
+    .gallery {
+      max-width: 1000px;
+      margin: 0 auto 3rem;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      justify-items: center;
+    }
+    .gallery-item {
+      border: 2px solid #ffb6c1;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #ffe6f0; /* new subtle background color */
+      box-shadow: 0 2px 8px rgba(255, 105, 180, 0.2);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 12px;
+    }
+    .gallery-item:hover,
+    .gallery-item:focus {
+      box-shadow: 0 6px 18px rgba(214, 51, 132, 0.4);
+      transform: translateY(-5px);
+      outline: none;
+    }
+    .gallery-item img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: contain;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    .gallery-item .caption {
+      font-size: 1rem;
+      color: #d63384;
+      font-weight: 600;
+      text-align: center;
+    }
+    .price {
+      font-size: 0.9rem;
+      color: #7a4b2c;
+      margin-top: 5px;
+      text-align: center;
+    }
+  /* Back to Products with background */
+    .back-link {
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #b3502a;
+      background-color: #d8a7b1; /* Matches gallery background */
+      border-radius: 8px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .back-link:hover,
+    .back-link:focus {
+      background-color: #c08d98;
+      color: #7a2a0a;
+      text-decoration: underline;
+      outline: none;
+    }
+
+    /* Footer with same tone */
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #fff;
+      background-color: #d8a7b1; /* Matches item box */
+      margin-top: auto;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        gap: 12px;
+        font-size: 1rem;
+      }
+      .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Crowned by Kwaza</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html" aria-current="page">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 class="page-title">Headwraps</h1>
+  <p class="intro">Discover a beautiful collection of vibrant headwraps, perfect for every occasion and style. Each piece crafted with care to celebrate your unique flair.</p>
+
+  <div class="gallery" role="list">
+    <div class="gallery-item" role="listitem" tabindex="0">
+      <img src="images/kwaza (6).jpg" alt="Bright Colorful Headwrap Collection" />
+      <div class="caption">Bright Colorful Headwrap Collection</div>
+      <p class="price">Add a pop of colour to your everyday look.</p>
+    </div>
+    <div class="gallery-item" role="listitem" tabindex="0">
+      <img src="images/kwaza (2).jpg" alt="Variety of Patterns & Styles" />
+      <div class="caption">Variety of Patterns & Styles</div>
+      <p class="price">Choose from bold prints or soft pastels.</p>
+    </div>
+    <div class="gallery-item" role="listitem" tabindex="0">
+      <img src="images/kwaza (10).jpg" alt="Floral Pattern Headwraps" />
+      <div class="caption">Floral Pattern</div>
+      <p class="price">Perfect for spring and summer outfits.</p>
+    </div>
+    <div class="gallery-item" role="listitem" tabindex="0">
+      <img src="images/IMG-20250812-WA0043.jpg" alt="Different Designs & Fabrics" />
+      <div class="caption">Different Designs & Fabrics</div>
+      <p class="price">R150 each | R200 for 2</p>
+    </div>
+    <div class="gallery-item" role="listitem" tabindex="0">
+      <img src="images/kwaza (7).jpg" alt="Elegant Colorful Wrap" />
+      <div class="caption">Elegant Black & Gold Wrap</div>
+      <p class="price">A statement piece for special occasions.</p>
+    </div>
+    <div class="gallery-item" role="listitem" tabindex="0">
+      <img src="images/kwaza (8).jpg" alt="Casual Everyday Headwrap" />
+      <div class="caption">Casual Everyday Headwrap</div>
+      <p class="price">Lightweight and comfortable for daily wear.</p>
+    </div>
+  </div>
+
+  <a href="product.html" class="back-link">&larr; Back to Products</a>
+
+  <footer>
+    <p>&copy; 2025 Crowned by Kwaza. All rights reserved.</p>
+  </footer>
+</body>
+</html>

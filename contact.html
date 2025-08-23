@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | Crowned by Kwaza</title>
+  <style>
+    /* Reset default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5; /* light pink */
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(90deg, #ffb6c1, #ff69b4); /* pink gradient */
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+    }
+
+    .navbar .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-links li a:hover,
+    .navbar .nav-links li a:focus {
+      color: #ffe4e1; /* lighter pink on hover */
+      text-decoration: underline;
+    }
+
+    /* Contact Section */
+    .contact-info {
+      background-color: #ffe4e1; /* soft pink background */
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 32px 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(255, 105, 180, 0.3); /* pink shadow */
+      text-align: center;
+      flex-grow: 1;
+      color: #333;
+    }
+
+    .contact-info h2 {
+      font-size: 2.2rem;
+      color: #d63384; /* pink heading */
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .contact-info p {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 26px;
+    }
+
+    .contact-info ul {
+      list-style: none;
+      padding-left: 0;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+
+    .contact-info ul li {
+      margin-bottom: 16px;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .contact-info ul li a {
+      color: #d63384; /* pink links, no warm brown */
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info ul li a:hover,
+    .contact-info ul li a:focus {
+      color: #ffb6c1; /* lighter pink hover */
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, #ffb6c1, #ff69b4);
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      font-size: 0.9rem;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .contact-info {
+        width: 90%;
+        padding: 24px 16px;
+      }
+
+      .navbar {
+        flex-direction: column;
+        gap: 12px;
+        font-size: 1.3rem;
+      }
+
+      .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Crowned by Kwaza</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-info" role="main">
+    <h2>Contact Us</h2>
+    <p>If you want to place an order or ask a question, please contact us using the details below:</p>
+    <ul>
+      <li>📞 Phone: <a href="tel:+27606898292">060 6898 292</a></li>
+      <li>📧 Email: <a href="mailto:kwazadyani93@gmail.com">kwazadyani93@gmail.com</a></li>
+      <li>💬 WhatsApp: <a href="https://wa.me/27606898292" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></li>
+      <li>📍 Address:66 Saint James Street Southernwood, East London</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Crowned by Kwaza. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
